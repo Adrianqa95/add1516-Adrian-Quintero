@@ -1,0 +1,8 @@
+#Cliente ligero con LTPS
+
+## Preparativos
+
+Para realizar esta practica hemos tenido que utilizar dos maquinas virtuales
+con un sistema operativo de ubuntu. Una de ellas la vamos a usar como servidor
+y la otra la crearemos como cliente, esta maquina no tendrá ni disco duro ni 
+disco de CD
