@@ -1,0 +1,11 @@
+#!/usr/bin/ruby
+#esconding: utp-8
+
+#esto lo usamos para ver que usuario somos
+whoami ="whoami"
+usuario= whoami.chop
+  if usuario =="root"
+  	puts "Hola superusuario"
+  else
+   puts "Permiso denegado, no eres SuperUsuario"
+  end
