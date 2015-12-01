@@ -85,11 +85,11 @@ ello es necesario seguir unos pasos, esto no lo hacemos con Administrador,
 
 - Montaremos el recurso remoto con: mount –o anon,nolock,r,casesensitive \\172.18.19.22\Nombre-recurso-NFS *
 
-- Public
+       - Public
 
 ![Foto 15](./Nfs-Windows/15.png)
 
-- Private
+       - Private
 
 ![Foto 15](./Nfs-Windows/15a.png)
 
