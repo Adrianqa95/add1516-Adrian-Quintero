@@ -1,9 +1,0 @@
-#!/usr/bin/ruby
-#enconding: utf-8
-
-users="cat userlist.txt"
-
-userlist= users.split("\n")
-  list.earch do |NombreUsuario|
-    system("delusers #{NombreUsuario}")
-  end
