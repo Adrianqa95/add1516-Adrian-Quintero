@@ -1,4 +1,4 @@
-Gregorio Adrian Quintero Alvarez
+Gregorio Adrián Quintero Álvarez
 
 #NFS (Network File System)
 
@@ -83,7 +83,7 @@ ello es necesario seguir unos pasos, esto no lo hacemos con Administrador,
 
 ![Foto 14](./Nfs-Windows/14.png)
 
-- Montaremos el recurso remoto con: mount –o anon,nolock,r,casesensitive \\172.18.19.22\Nombre-recurso-NFS *
+Montaremos el recurso remoto con: mount –o anon,nolock,r,casesensitive \\172.18.19.22\Nombre-recurso-NFS *
 
 - Public
 
