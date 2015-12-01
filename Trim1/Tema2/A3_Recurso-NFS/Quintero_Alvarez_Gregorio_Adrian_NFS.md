@@ -12,17 +12,17 @@ Una máquina virtual de  Windows 2008 Server como servidor NFS.
 
 - Como nombre de la máquina usaremos Quintero+19+WS", le pondremos una IP estática 172.18.19.22  y como grupo de trabajo AULA108.
 
-![Foto 1](./Nfs-windows/1.PNG)    
+![Foto 1](./Nfs-Windows/1.png)    
 
-![Foto 2](/Nfs-windows/2.png)
+![Foto 2](./Nfs-Windows/2.png)
 
 Una máquina virtual de Windows 7 (Enterprise) como cliente NFS.
        
 - Como nombre de la máquina usaremos Quintero+19+WC", le pondremos una IP estática 172.18.19.12  y como grupo de trabajo AULA108.
 
-![Foto 3](./Nfs-windows/3.png)
+![Foto 3](./Nfs-Windows/3.png)
 
-![Foto 4](./Nfs-windows/4.png)
+![Foto 4](./Nfs-Windows/4.png)
 
 ## 1.1 Servidor NFS Windows
 
@@ -30,29 +30,29 @@ Empezaremos con la Instalación del servicio NFS en Windows 2008 Server
 
 - Iremos a la parte de agregar rol Servidor de Archivos y marcamos Servicio para NFS.
 
-![Foto 5](./Nfs-windows/5.png)
+![Foto 5](./Nfs-Windows/5.png)
 
-![Foto 5](./Nfs-windows/6.png)
+![Foto 5](./Nfs-Windows/6.png)
 
 Ahora configuraremos el servidor NFS de la siguiente forma:
 
 A continuacion crearemos la carpeta c:\export\public y  la configuramos para 
 que sea accesible desde la red en modo lectura/escritura con NFS.
 
-![Foto 8](./Nfs-windows/8.png)
+![Foto 8](./Nfs-Windows/8.png)
 
-![Foto 9](./Nfs-windows/9.png)
+![Foto 9](./Nfs-Windows/9.png)
 
 Después crearemos la carpeta c:\export\private y la configuramos para quea 
 accesible desde la red sólo en modo sólo lectura.
 
-![Foto 8](./Nfs-windows/8.png)
+![Foto 8](./Nfs-Windows/8.png)
 
-![Foto 10](./Nfs-windows/10.png)
+![Foto 10](./Nfs-Windows/10.png)
 
 Para comporbar  los recursos compartidos usamos el comando showmount -e 172.18.19.22.
 
-![Foto 11](./Nfs-windows/11.png)
+![Foto 11](./Nfs-Windows/11.png)
 
 ## 1.2 Cliente NFS
 
@@ -65,13 +65,13 @@ Activar o desactivar características de Windows.
 este, Cliente NFS, elegimos ambos y le damos a Aceptar y en unos instantes 
 tendremos el soporte habilitado.
 
-![Foto 12](./Nfs-windows/12.png)
+![Foto 12](./Nfs-Windows/12.png)
 
 Para iniciar el servicio NFS en el cliente, abrimos una consola con permisos de Administrador y ejecutamos el siguiente comando: 
 
 - nfsadmin client start
 
-![Foto 13](./Nfs-windows/13.png)
+![Foto 13](./Nfs-Windows/13.png)
 
 ## 1.3 Montando el recurso
 
@@ -81,39 +81,39 @@ ello es necesario seguir unos pasos, esto no lo hacemos con Administrador,
 
 - Consultar desde el cliente los recursos que ofrece el servidor: showmount -e 172.18.19.22
 
-![Foto 14](./Nfs-windows/14.png)
+![Foto 14](./Nfs-Windows/14.png)
 
 - Montaremos el recurso remoto con: mount –o anon,nolock,r,casesensitive \\172.18.19.22\Nombre-recurso-NFS *
 
 - Public
 
-![Foto 15](./Nfs-windows/15.png)
+![Foto 15](./Nfs-Windows/15.png)
 
 - Private
 
-![Foto 15](./Nfs-windows/15a.png)
+![Foto 15](./Nfs-Windows/15a.png)
 
 - Comprobaremos en el cliente los recursos montados: net use.
 
-![Foto 16](./Nfs-windows/16.png)
+![Foto 16](./Nfs-Windows/16.png)
 
 - Comprobaremos desde el cliente: showmount -a 172.18.19.22.
 
-![Foto 17](./Nfs-windows/17.png)
+![Foto 17](./Nfs-Windows/17.png)
 
 - En el servidor ejecutamos el comando showmount -e 172.18.19.22, para ver los recursos compartidos.
 
-![Foto 18](./Nfs-windows/18.png)
+![Foto 18](./Nfs-Windows/18.png)
 
 Si tenemos problemas comprobaremos el cortafuegos del servidora ver si permite accesos NFS.
 
 - Para desmontar la unidad simplemente escribimos en una consola: umount z:
 
-![Foto 19](./Nfs-windows/19.png)
+![Foto 19](./Nfs-Windows/19.png)
 
 - En el servidor ejecutamos el comando showmount -e 172.18.19.22, para comprobar los recursos compartidos.
 
-![Foto 20](./Nfs-windows/20.png)
+![Foto 20](./Nfs-Windows/20.png)
 
 # 2 OpenSUSE
 
