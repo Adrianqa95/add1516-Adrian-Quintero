@@ -85,12 +85,12 @@ ello es necesario seguir unos pasos, esto no lo hacemos con Administrador,
 
 - Montaremos el recurso remoto con: mount –o anon,nolock,r,casesensitive \\172.18.19.22\Nombre-recurso-NFS *
 
-       - Public
+- Public
 
 ![Foto 15](./Nfs-Windows/15.png)
 
-       - Private
-
+- Private
+       
 ![Foto 15](./Nfs-Windows/15a.png)
 
 - Comprobaremos en el cliente los recursos montados: net use.
@@ -104,8 +104,6 @@ ello es necesario seguir unos pasos, esto no lo hacemos con Administrador,
 - En el servidor ejecutamos el comando showmount -e 172.18.19.22, para ver los recursos compartidos.
 
 ![Foto 18](./Nfs-Windows/18.png)
-
-Si tenemos problemas comprobaremos el cortafuegos del servidora ver si permite accesos NFS.
 
 - Para desmontar la unidad simplemente escribimos en una consola: umount z:
 
@@ -136,7 +134,7 @@ Una máquina de OpenSUSE, donde instalaremos el cliente NFS.
 
 ![Foto 2](./nfs-OpenSuse/2.png)
 
-/ETC/HOSTS: Por comodidad podemos configurar el fichero /etc/hosts del cliente y servidor, añadiendo estas líneas:
+Por comodidad podemos configurar el fichero /etc/hosts del cliente y servidor, añadiendo estas líneas:
 
 -   172.18.XX.52 nfs-server-19.alvarez   nfs-server-19
 -   172.18.XX.62 nfs-client-19.alvarez   nfs-client-19
@@ -159,9 +157,11 @@ Para instalar servidor NFS usaremos el entorno grafico de OpenSUSE denominado Ya
 
 Crearemos las siguientes carpetas y le asignaremos unos permisos:
 
-- /var/export/public, usuario y grupo propietario nobody:nogroup
 
-- /var/export/private, usuario y grupo propietario nobody:nogroup, permisos 770
+       - /var/export/public, usuario y grupo propietario nobody:nogroup
+
+
+       - /var/export/private, usuario y grupo propietario nobody:nogroup, permisos 770
   
 ![Foto 5](./nfs-OpenSuse/5.PNG)
 
