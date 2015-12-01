@@ -12,9 +12,9 @@ Una máquina virtual de  Windows 2008 Server como servidor NFS.
 
 - Como nombre de la máquina usaremos nuestro primer apellido+19+WS", le pondremos una IP estática 172.18.19.22  y como grupo de trabajo AULA108.
 
-![Foto 1](./Nfs-windows/1.png)    
+![Foto 1](Nfs-windows/1.png)    
 
-![Foto 2](./Nfs-windows/2.png)
+![Foto 2](Nfs-windows/2.png)
 
 Una máquina virtual de Windows 7 (Enterprise) como cliente NFS.
        
