@@ -12,7 +12,7 @@ Una máquina virtual de  Windows 2008 Server como servidor NFS.
 
 - Como nombre de la máquina usaremos Quintero+19+WS", le pondremos una IP estática 172.18.19.22  y como grupo de trabajo AULA108.
 
-![Foto 1](/Nfs-windows/1.png)    
+![Foto 1](./Nfs-windows/1.PNG)    
 
 ![Foto 2](/Nfs-windows/2.png)
 
