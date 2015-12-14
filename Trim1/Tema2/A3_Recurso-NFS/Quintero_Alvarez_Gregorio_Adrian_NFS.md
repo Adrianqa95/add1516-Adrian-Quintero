@@ -36,7 +36,7 @@ Empezaremos con la Instalación del servicio NFS en Windows 2008 Server
 
 Ahora configuraremos el servidor NFS de la siguiente forma:
 
-A continuacion crearemos la carpeta c:\export\public y  la configuramos para 
+A continuación crearemos la carpeta c:\export\public y  la configuramos para 
 que sea accesible desde la red en modo lectura/escritura con NFS.
 
 ![Foto 8](./Nfs-Windows/8.png)
@@ -50,7 +50,7 @@ accesible desde la red sólo en modo sólo lectura.
 
 ![Foto 10](./Nfs-Windows/10.png)
 
-Para comporbar  los recursos compartidos usamos el comando showmount -e 172.18.19.22.
+Para comprobar  los recursos compartidos usamos el comando showmount -e 172.18.19.22.
 
 ![Foto 11](./Nfs-Windows/11.png)
 
@@ -149,7 +149,7 @@ Por comodidad podemos configurar el fichero /etc/hosts del cliente y servidor, a
 
 2.1 Servidor NFS
 
-Para instalar servidor NFS usaremos el entorno grafico de OpenSUSE denominado Yast.
+Para instalar servidor NFS usaremos el entorno gráfico de OpenSUSE denominado Yast.
 
 ![Foto 4](./nfs-OpenSuse/4.PNG)
 
@@ -192,8 +192,8 @@ pero si tuviéramos que instalarlo en OpenSUSE zypper in nfs-common.
 
 ![Foto 4](./nfs-OpenSuse/4.png)
 
-Antes de realizar la comprobacion de conectividad nos vamos al Servidor y modificamos
-el contafuegos.
+Antes de realizar la comprobación de conectividad nos vamos al Servidor y modificamos
+el cortafuegos.
 
 ![Foto 8](./nfs-OpenSuse/8.png)
 
