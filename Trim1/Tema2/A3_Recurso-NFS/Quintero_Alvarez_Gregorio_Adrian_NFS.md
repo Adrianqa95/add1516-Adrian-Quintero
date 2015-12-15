@@ -124,7 +124,7 @@ y el VirtualBox Red en Modo Puente
 
 ![Foto 1](./nfs-OpenSuse/1.PNG)
 
-![Foto 2](./nfs-OpenSuse/2.PNG)
+![Foto 2](./nfs-OpenSuse/2.jpg)
 
 Una máquina de OpenSUSE, donde instalaremos el cliente NFS.
         
@@ -223,7 +223,7 @@ Ahora usando df -hT veremos que los recursos remotos están montados en nuestras
 Para montar los recursos NFS del servidor Windows haremos mount.nfs 172.18.19.22:/C/export/public /mnt/remoto/windows. Ahora podemos crear carpetas o 
 ficheros dentro del recurso public, pero sólo podremos leer lo que aparezca en private.
 
-2.3. Montaje automático
+## 2.3. Montaje automático
 
 Para configurar acciones de montaje autoḿaticos cada vez que se inicie el equipo en OpenSUSE usamos Yast o bien modificamos la configuración del fichero /etc/fstab. Comprobarlo.
 
