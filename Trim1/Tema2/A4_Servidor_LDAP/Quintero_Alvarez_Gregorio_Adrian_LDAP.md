@@ -11,7 +11,7 @@ con una IP estática la cual será 172.18.19.51, y el nombre de equipo "ldap-ser
 
 ![Foto 2](./imagenes/2.png)
 
-Después en en el archivo /etc/hosts añadiremos
+Después en el archivo /etc/hosts añadiremos
 
 - 127.0.0.2   ldap-server-19.curso1516   ldap-server-19
 - 127.0.0.3   adrian19.curso1516  adrian19
@@ -19,7 +19,7 @@ Después en en el archivo /etc/hosts añadiremos
 ![Foto 6](./imagenes/6.png)
 
 
-Por ultimo realizaremos los siguientes comandos: ip a, hostname -f, lsblk, blkid
+Por último realizaremos los siguientes comandos: ip a, hostname -f, lsblk, blkid
 
 ![Foto 18](./imagenes/18.png)
 
@@ -42,6 +42,7 @@ Iremos a yast y buscaremos el Servidor de autenticación. y seleccionamos estas 
 ![Foto 13](./imagenes/13.png)
 
 - Usamos como DN lo siguiente: dc=adrian19, dc=curso1516.
+- Como contraseña se estableció "alumno"
 
 ![Foto 11](./imagenes/11.png)
 
@@ -69,7 +70,7 @@ Debemos instalar el paquete yast2-auth-client, que nos ayudará a configurar la 
 
 ![Foto 5](./imagenes/5.png)
 
-El parámetro LDAP URI es un localizador del recurso de la base de datos LDAP -> ldap://ldap-server-19/dc=adrian19,dc=curso1516
+El parámetro LDAP URI es un localizador del recurso de la base de datos LDAP -> ldap://dc=adrian19,dc=curso1516
 
 ![Foto 20](./imagenes/20.png)
 
