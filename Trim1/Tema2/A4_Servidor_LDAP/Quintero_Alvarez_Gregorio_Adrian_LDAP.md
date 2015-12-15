@@ -124,3 +124,5 @@ Por ultimo realizaremos los siguientes comandos: ip a, hostname -f, lsblk, blkid
 ## 2.2 Configuración
 
 Siguiendo las instrucciones vamos a crear el grupo LDAP troopers y dentro de este trooper1 y trooper2 y despues con el gq comprobamos los datos del servidor LDAP
+
+- Este apartado no se pudo realizar puesto que no se establecia la conexión.
