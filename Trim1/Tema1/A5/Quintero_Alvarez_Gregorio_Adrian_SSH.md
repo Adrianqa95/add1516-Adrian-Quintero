@@ -1,4 +1,4 @@
-Gregorio AdriÁn Quintero Álvarez
+Gregorio Adrián Quintero Álvarez
 
 #Acceso Remoto de SHH.
 
