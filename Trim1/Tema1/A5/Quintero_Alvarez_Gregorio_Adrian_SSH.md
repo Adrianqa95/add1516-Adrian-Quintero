@@ -1,8 +1,8 @@
-Gregorio AdriÁn Quintero Álvarez
+Gregorio Adrián Quintero Álvarez
 
-#Acceso Remoto de SHH
+#Acceso Remoto de SHH.
 
-## 0.1 Introducción
+## 0.1 Introducción.
 
 En esta práctica lo que vamos a realizar es una conexión remota mediante shh y
 para ello es necesario la instalación del servicio shh y estas tres máquinas:
@@ -10,7 +10,7 @@ para ello es necesario la instalación del servicio shh y estas tres máquinas:
 - Un cliente OpenSUSE con un ip estatica la cual será 172.18.19.54.
 - Un cliente Windows 7 con ip estatica y que será 172.18.19.13.
 
-## 0.2 Configuración de red
+## 0.2 Configuración de red.
 
 Ahora nos dispondremos a realizar la configuración de las redes de las máquinas
 estableciendolas es estático y para realizar esta modificación usaremos el entorno
@@ -26,16 +26,16 @@ Tambien vamos a realizar dicha configuración en windows 7.
 
 ![Foto 3b](3b.png)
 
-# 1 Preparativos
+# 1 Preparativos.
 
-## 1.1 Servidor SSH
+## 1.1 Servidor SSH.
 
 Vamos a empezar configurando la máquina de OpenSUSE estableciendole los siguiente
 valores:
-- Como nombre de usuario pondremos nuestro nombre
-- Como clave para root usaremos nuestro DNi
-- Para nombre del equipo usaremos ssh-server
-- Como nombre del dominio estableceremos el segundo apellido
+- Como nombre de usuario pondremos nuestro nombre.
+- Como clave para root usaremos nuestro DNi.
+- Para nombre del equipo usaremos ssh-server.
+- Como nombre del dominio estableceremos el segundo apellido.
 
 Ahora iremos a la la extensión /etc/ y editaremos el archivo hosts y le añadiremos
 los datos del cliente y de windows, ambos los configuraremos a continuación.
@@ -52,7 +52,7 @@ y le añadiremos un número del 1-4.
 
 ![Foto 7](7.png)
 
-## 1.2 Cliente OpenSUSE
+## 1.2 Cliente OpenSUSE.
 
 En el cliente de OpenSUSE estableceremos como nombre de usuario nuestro nombre,
 como contraseña de root nuestro DNi y como nombre del equipo ssh-client1 y le 
@@ -61,7 +61,7 @@ modificaremos el archivo /etc/hosts y le añadiremos el servidor y el cliente de
 
 ![Foto 5b](5b.png)
 
-## 1.3 Cliente Wondows 7
+## 1.3 Cliente Windows 7.
 
 En esta máquina instalaremos el cliente ssh para ello descargaremos un programa
 llamado PuTTY y lo ejecutamos.
@@ -76,30 +76,29 @@ ssh-server y ssh-client1.
 
 ![Foto 6b](6b.png) 
 
-# 2 Instalación del servicio SSH
+# 2 Instalación del servicio SSH.
 
 Estando en nuestro servidor iremos a un terminal y ejecutaremos el comando zypper in openssh
-el cual nos instalara el servicio ssh si no lo tenemos instalado, en cambio si el servicio ya se encuentra en nuestro equipo nos dira que ya esta 
-instalado y nos dira que versión tenemos.
+el cual nos instalara el servicio ssh si no lo tenemos instalado, en cambio si el servicio ya se encuentra en nuestro equipo nos dira que ya esta instalado y nos dira que versión tenemos.
 
 ![Foto 8](8.png)
 
-## 2.1 Comprobación 
+## 2.1 Comprobación. 
 
-Desde nuestro servidor ejecutaremos el comando "systemctl status sshd" para ver en que estado se encuentra nuestro servicio el cual aparece desabilitado y sin ejecutar
+Desde nuestro servidor ejecutaremos el comando "systemctl status sshd" para ver en que estado se encuentra nuestro servicio el cual aparece desabilitado y sin ejecutar.
 
 ![Foto 9](9.png)
  
 para cambiar eso ejecutaremos estos dos comandos:
 
-- systemctl enable sshd para pones en servicio en enable 
-- systemctl start sshd para poner en ejecución el servicio shh
+- systemctl enable sshd para pones en servicio en enable. 
+- systemctl start sshd para poner en ejecución el servicio shh.
 
-Despues comprobaremos que nuestro servicio esta escuchando por el puesto 22 usando el comando "netstat -ntap"
+Despues comprobaremos que nuestro servicio esta escuchando por el puesto 22 usando el comando "netstat -ntap".
 
 ![Foto 11](11.png)
 
-## 2.2 Primera conexión SSH desde el cliente
+## 2.2 Primera conexión SSH desde el cliente.
 
 Empezaremos comprobando que desde nuestro cliente hay conexión con nuestro servidor para ello 
 haremos un ping al ssh-server y después comprobaremos que el servidor tiene el puerto 22 abirto 
@@ -110,11 +109,11 @@ servicios autorizados pondremos el SSH en una zona externa.
 
 ![Foto 15](15.png)
 
-asi nos permita la conexión entre ambos y tambien configuraremos la interfaces.
+Así nos permitará la conexión entre ambos y tambien configuraremos la interfaces.
 
 ![Foto 14](14.png)
 
-Después realizaremos el ping ssh-server y  nmap ssh-serve y comprobamos que nos sale la escucha del puerto 22.
+Después realizaremos el ping ssh-server y  nmap ssh-server y comprobamos que nos sale la escucha del puerto 22.
 
 ![Foto 12](12.png)
 
@@ -130,7 +129,7 @@ solo nos pide nuestra contraseña y se realiza la conexión.
 ![Foto 17](17.png)
 
 Ahora cerraremos la conexión entre ambos y desde nuestro cliente comprobaremos el archivo 
-known_hosts que se encuentra en nuestro home para ello usamos el comando ll .ssh/ 
+known_hosts que se encuentra en nuestro home para ello usamos el comando ll .ssh/. 
 
 ![Foto 18](18.png)
 
@@ -139,10 +138,10 @@ esta realizada correctamente tambien nos debería dejar entrar sin problemas.
 
 ![Foto 18b](18b.png)
 
-## 2.3 Cambiar la clave en el servidor
+## 2.3 Cambiar la clave en el servidor.
 
 Lo que vamos a realizar primero sera que existen los ficheros en /etc/ssh para ello
-usaremos el comando "ll" desde el servidor
+usaremos el comando "ll" desde el servidor.
 
 ![Foto 19](19.png)
 
@@ -155,7 +154,7 @@ Mediante otro comando generaremos las nuevas claves de SSH para ello es necesari
 
 ![Foto 21](21.png)
 
-Ahora reiniciamos el servicio SSH para que los cambios se aplique y lo comprobamos
+Ahora reiniciamos el servicio SSH para que los cambios se aplique y lo comprobamos.
 
 ![Foto 22](22.png)
 
@@ -171,25 +170,25 @@ desde los dos clientes tanto desde client1 como de client2.
 ![Foto 24](24.png)
 
 Para restablecer la entrada de usuarios y que no nos de problemas usamos el comando
-que no pedia y asi restablecer las nues claves del servidor en el cliente.
+que nos pedía y asi restablecer las claves del servidor en el cliente.
 
 ![Foto 25](25.png)
 
-# 3 Personalización del prompt Bash
+# 3 Personalización del prompt Bash.
 
 A continuación vamos a realizar la configuracion del .bashrc para que la apariencia 
 cuando entremos en los clientes cambie y aparezca de otra forma. Para ello vamos 
 a ir al home del usuario que queremos personalizar y configuramos el .bashrc. Ademas
-tambien crearemos el archivo .alias con accesos rapidos
+tambien crearemos el archivo .alias con accesos rápidos.
 
 ![Foto 26](26.png)
 
 ![Foto 26b](26b.png)
 
-# 4 Autenticacion mediante claves públicas
+# 4 Autenticacion mediante claves públicas.
 
 En este apartado vamos a configurar SSH para poder acceder desde el cliente1,
-usando quintero4 sin poner password
+usando quintero4 sin poner password.
 
 Vamos a configurar la autenticación mediante clave pública para acceder con nuestro
 usuario personal desde el equipo cliente al servidor con el usuario 1er-apellido-alumno4.
@@ -203,7 +202,7 @@ usuario personal desde el equipo cliente al servidor con el usuario 1er-apellido
 ![Foto 28](28.png)
 
 - Ahora vamos a copiar la clave pública (id_rsa.pub) del usuario (nombre-de-alumno)de la máquina cliente, al fichero "authorized_keys" del usuario remoteuser4 en el servidor. Hay dos formas de hacerlo:
-Modo 1. Usando un comando específico para ello ssh-copy-id remoteuser4@ssh-server
+Modo 1. Usando un comando específico para ello ssh-copy-id remoteuser4@ssh-server.
 
 ![Foto 29](29.png)
 
@@ -215,7 +214,7 @@ Modo 1. Usando un comando específico para ello ssh-copy-id remoteuser4@ssh-serv
 
 ![Foto 31](31.png)
 
-# 5 Uso de SSh como túnel para X
+# 5 Uso de SSh como túnel para X.
 
 Desde nuestro servidor instalamos una aplicación de entorno gráfico como el geany,
 en el caso de que esta aplicación estuviese instalada en los clientes tendriamos que quitarlas.
@@ -223,49 +222,49 @@ en el caso de que esta aplicación estuviese instalada en los clientes tendriamo
 ![Foto 32](32.png)
 
 Posteriormente modificaremos el servidor ssh para que permita la ejecución de aplicaciones
-gráficas desde los clientes
+gráficas desde los clientes.
 
 ![Foto 33](33.png)
 
 Ahora comprobaremos que desde nuestro cliente nos permite utilizarlo para ello hay que
-entrar de forma remota para ello usamos ssh -X quintero1@ssh-server.alvarez
+entrar de forma remota para ello usamos ssh -X quintero1@ssh-server.alvarez.
 
 ![Foto 34](34.png)
 
-# 6 Aplicaciones Windows nativas
+# 6 Aplicaciones Windows nativas.
 
 Usando un emulador en el servidor podemos acceder desde OpenSUSE a aplicaciones de 
 windows.
 
-Para ello instalamos el emulador Wine
+Para ello instalamos el emulador Wine.
 
 ![Foto 35](35.png)
 
 Después podremos usar la aplicación notepad que se instala por defecto al instalar el Wine y
-para ver que esto funciona ponemos en el servidor notepad
+para ver que esto funciona ponemos en el servidor notepad.
 
 ![Foto 36](36.png)
 
-Ahora hacemos la misma comprobación desde client1 para ello es necesario entrar de forma remota
+Ahora hacemos la misma comprobación desde client1 para ello es necesario entrar de forma remota.
 
 ![Foto 37](37.png)
 
-# 7 Restricciones de uso
+# 7 Restricciones de uso.
 
-## 7.1 Sin Restricción
+## 7.1 Sin Restricción.
 
-Al usuario 1 no se le aplicaran restricciones podra acceder libremente
+Al usuario 1 no se le aplicaran restricciones podra acceder libremente.
 
 ## 7.2 Restricción total
 
 En el servidor SSH le aplicaremos la restricción al usuario2  para que no tenga acceso
 mientra que los demas podrán acceder libremente.
 
-Para ello configuramos el /etc/ssh/shhd_config estableciento unas lineas al final
+Para ello configuramos el /etc/ssh/shhd_config estableciento unas lineas al final.
 
 ![Foto 38](38.png)
 
-Ahora comprobaremos el acceso desde ambos clientes
+Ahora comprobaremos el acceso desde ambos clientes:
 
 - Client1 
 
@@ -275,18 +274,18 @@ Ahora comprobaremos el acceso desde ambos clientes
 
 ![Foto40](40.png)
 
-## 7.4 Restricciones sobre aplicaciones
+## 7.4 Restricciones sobre aplicaciones.
 
 Ahora vamos a crear una restricción de permisos sobre determinadas aplicaciones.
 
-- Usaremos el usuario remoteuser4
-- Crear grupo remoteapps
+- Usaremos el usuario remoteuser4.
+- Crear grupo remoteapps.
 - Incluir al usuario en el grupo.
 
 ![Foto 41](41.png)
 
 - Localizar el programa APP1. Posiblemente tenga permisos 755.
-- Poner al programa APP1 el grupo propietario a remoteapps
+- Poner al programa APP1 el grupo propietario a remoteapps.
 
 ![Foto 42](42.png)
 
