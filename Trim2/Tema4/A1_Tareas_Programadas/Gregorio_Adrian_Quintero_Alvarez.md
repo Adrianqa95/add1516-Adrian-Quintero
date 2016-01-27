@@ -7,7 +7,7 @@ Gregorio Adrián Quintero Álvarez
 # 1.1 Configuración de la máquina.
 
 Para esta práctica usaremos una máquina virtual de openSUSE 13.2 en la cual estableceremos
-esta serie de parametros:
+esta serie de parámetros:
 
 - Una IP estática: 172.18.19.51.
 - Como máscara de red: 255.255.0.0.
@@ -53,7 +53,7 @@ que deberemos realizar será la activación del servicio "atd".
 
 # 1.3 Tarea periódica
 
-Vamos a progamar una tarea periódica en las cual se nos muestre un mensaje de animo para ello   
+Vamos a programar una tarea periódica en las cual se nos muestre un mensaje de animo para ello   
 usaremos un script.
 
 ![Foto 13](./imagenes/13.png)
@@ -78,9 +78,9 @@ Para esta parte de la práctica usaremos un Windows 7 Professional con esta conf
 
 # 2.2 Tarea Diferida.
 
-Empezaremos progamando un tarea que nos muestre un mensaje anonimo en la pantalla,
+Empezaremos programando una tarea que nos muestre un mensaje anónimo en la pantalla,
 para ello iremos al panel de control -> Herramientas Administrativas -> Programador de tareas 
-y alli preparamos la tarea de mensaje.
+y allí preparamos la tarea de mensaje.
 
 ![Foto 11](./imagenes/11.png)
 
@@ -89,7 +89,7 @@ y alli preparamos la tarea de mensaje.
 # 2.3 Tarea periódica.
 
 Ahora programaremos una tarea que nos apague la máquina para ello usaremos un comando.
-shutdown /s /t "aqui pondremos el tiempo en segundos". Ejemplo: shutdown /s /t 60.
+shutdown /s /t "aquí pondremos el tiempo en segundos". Ejemplo: shutdown /s /t 60.
 Esto programara un apagado para dentro de 60seg.
 
 ![Foto 10](./imagenes/10.png)
