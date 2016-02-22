@@ -1,10 +1,10 @@
-Gregorio Adrian Quintero Alvarez
+Gregorio Adrián Quintero Álvarez
 
 # 1.Introducción.
 
 En esta práctica vamos a realizar una conexión de un Master que tendrá un S.O 
 de OpenSUSE y de dos clientes, uno Linux y otro Windows. Esto se realizará mediante
-Puppet una herramienta diseñada para administrar la configuración de sisteras Unix-like y de Microsoft.
+Puppet una herramienta diseñada para administrar la configuración de sistemas Unix-like y de Microsoft.
 
 ## 1.1 Configuración.
 
@@ -49,7 +49,7 @@ Esta máquina recibirá ordenes del master y tendrá esta configuración:
 
 Esta máquina también recibirá ordenes del master y tendrá la siguiente configuración:
 
- -  SIstema Operativo Windows 7.
+ -  Sistema Operativo Windows 7.
  -  Una IP estática 172.18.19.102
  -  Enlace: 172.18.0.1
  -  DNS: 8.8.4.4.
@@ -77,7 +77,7 @@ usando los nombres de las máquinas.
 
 ![Foto 3](./cli2/3.png)
 
-## 1.2 Comprobación de las cofiguraciones.
+## 1.2 Comprobación de las configuraciones.
 
 Para realizar la comprobación en las máquinas de OpenSUSE usaremos estos comandos:
 
@@ -265,7 +265,7 @@ El cliente puppet debe ser informado de quien será su master. Para ello, añadi
 
 ### 4.1 Aceptar certificados.
 
-Vamos al master y consultamos las peticiones pendientes de union al master: puppet cert list.
+Vamos al master y consultamos las peticiones pendientes de unión al master: puppet cert list.
 
 ![Foto 17](./Master/17.png)
 
@@ -277,7 +277,7 @@ Aceptamos al nuevo cliente desde el master con: "puppet cert sign "cli1alu19.Qui
 
 ### 4.2 Comprobación Final
 
-Nos vamos al cliente1 y reinicimos el servicio puppet.
+Nos vamos al cliente1 y reiniciamos el servicio puppet.
 
 ![Foto 13](./cli1/13.png)
 
@@ -288,13 +288,13 @@ Comprobamos que los cambios configurados en puppet se han realizado.
 Para ver en detalle los errores, podemos reiniciar el servicio puppet en el cliente y consultar el archivo log del cliente.
 
 Puede ser que tengamos en algún mensaje de error de configuración del fichero /etc/puppet/manifests/site.pp
-del master, si es asi ir al master y corregir los errores y continuar con el siguiente paso.
+del master, si es así ir al master y corregir los errores y continuar con el siguiente paso.
 
 ## 5 Segunda versión del fichero pp
 
 A continuación probaremos una configuración mas compleja del puppetmaster.
 
-Esto irá en otro fichero pp que se llamara hostlinux2.pp, el cual tendrá este contenido:
+Esto irá en otro fichero que se llamara hostlinux2.pp, el cual tendrá este contenido:
 
 ![Foto 20](./Master/20.png)
 
@@ -328,7 +328,7 @@ instalada la misma versión que el master.
 
 ### 6.2 Modificaciones en el Cliente2
 
-Vamos a instalar el AgentePuppet en windows, despues de haberla instalado reinicimos la
+Vamos a instalar el AgentePuppet en windows, después de haberla instalado reiniciamos la
 máquina y aceptamos el certificado en el master para este nuevo cliente.
 
 ![Foto 8](./cli2/8.png)
@@ -359,7 +359,7 @@ Iniciamos el puppet como administrador y probamos los siguientes comandos:
 
 ![Foto 16](./cli2/16.png)
 
- -  puppet resource file c:\Users: Para var la configuración puppet de la carpeta.
+ -  puppet resource file c:\Users: Para ver la configuración puppet de la carpeta.
 
 ![Foto 17](./cli2/17.png)
 
@@ -378,7 +378,7 @@ class hostwindows3 {
   }
 }
 
-Tambien debemos añadir el en el site.pp el hostwindows3.pp
+También debemos añadir el en el site.pp el hostwindows3.pp
 
 ![Foto 23](./Master/23.png)
 
