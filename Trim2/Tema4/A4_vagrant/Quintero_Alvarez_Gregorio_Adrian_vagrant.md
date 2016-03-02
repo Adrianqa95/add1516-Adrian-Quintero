@@ -1,23 +1,14 @@
 ## Gregorio Adrián Quintero Álvarez
 
-#1. Introducción
+#1. Primeros pasos
 
+##1.1 Instalar
 
-*Autor*
-```
-    La información para desarrollar esta actividad ha sido extraída del 
-    enlace anterior publicado por: Jonathan Wiesel, El 16/07/2013*
-```
-
-#2. Primeros pasos
-
-##2.1 Instalar
-
-Para instalar vagrant hay varias formas (como todos sabemos).
+Para instalar vagrant hay varias formas.
 
 * Nosotros vamos a usar el paquete [Vagrant-deb] preparado para descargar del servidor Leela.
 
-##2.2. Proyecto
+##1.2. Proyecto
 
 * Crear un directorio para nuestro proyecto vagrant con esta serie de comandos:
 
@@ -27,9 +18,9 @@ Para instalar vagrant hay varias formas (como todos sabemos).
 
 ![Foto1](./imagenes/1.png)
 
-##2.3 Imagen, caja o box
+##1.3 Imagen, caja o box
 
-Ahora necesitamos obtener una imagen(caja, box) de un sistema operativo. Por ejemplo:
+Ahora necesitamos obtener una imagen de un sistema operativo. Por ejemplo:
 
 	- Vagrant box add micajaXX_ubuntu_precise32 http://files.vagrantup.com/precise32.box
 
@@ -43,11 +34,11 @@ de la carpeta del proyecto.
 
 ![Foto 2](./imagenes/2.png)
 
-##2.4 Iniciar la máquina
+##1.4 Iniciar la máquina
 
 Vamos a iniciar la máquina virtual creada con Vagrant:
 
-* `cd mivagrantXX`
+* `cd mivagrant19`
 * `vagrant up`: comando para iniciar una la instancia de la máquina.
 
 ![Foto 04](./imagenes/04.png)
@@ -64,13 +55,13 @@ Podemos usar ssh para conectar con nuestra máquina virtual (`vagrant ssh`).
     * `vagrant status`: Estado actual de la máquina.
     * `vagrant destroy`: Para eliminar completamente la máquina.
 
-#3. Configuración
+#2. Configuración
 
-##3.1 Carpetas sincronizadas
+##2.1 Carpetas sincronizadas
 
  La carpeta del proyecto que contiene el `Vagrantfile` comparte los 
-archivos entre el sistema anfitrión y el virtualizado, esto nos permite 
-compartir archivos fácilmente entre los ambientes.
+ archivos entre el sistema anfitrión y el virtualizado, esto nos permite 
+ compartir archivos fácilmente entre los ambientes.
 
 * Para identificar la carpeta compartida dentro del ambiente virtual,
 lo que hacemos es:
@@ -79,7 +70,7 @@ lo que hacemos es:
     vagrant ssh
     ls /vagrant
 
-##3.2 Redireccionamiento de los puertos
+##2.2 Redireccionamiento de los puertos
 
 Uno de los casos más comunes cuando tenemos una máquina virtual es la 
 situación que estamos trabajando con proyectos enfocados a la web, 
@@ -98,9 +89,9 @@ sistema anfitrión será enrutado al puerto 80 del ambiente virtualizado.
 
 * Luego iniciamos la MV (si se encuentra en ejecución la reiniciamos con `vagrant reload`)
 
-#4.Suministro
+#3.Suministro
 
-##4.1 Suministro mediante script
+##3.1 Suministro mediante script
 
 Quizás el aspecto con mayor beneficios del enfoque que usa Vagrant 
 es el uso de herramientas de suministro, el cual consiste en correr 
@@ -144,7 +135,7 @@ abrimos navegador en la máquina real con URL `http://172.18.19.0:4567`.
 
 ![Foto 06](./imagenes/06.png)
 
-##4.2 Suministro mediante Puppet
+##3.2 Suministro mediante Puppet
 
 Vagrantfile configurado con puppet:
 
@@ -158,7 +149,7 @@ Fichero de configuración de puppet:
 * En el fichero `apache2.pp`, estarán las órdenes puppet para instalar y configurar 
 el servicio web apache2.
 
-#5. Otras cajas, nuestras cajas
+#4. Otras cajas, nuestras cajas
 
 Si estamos pensando en crear nuestra propia caja, entonces podemos seguir las
 indicaciones del siguiente enlace:
