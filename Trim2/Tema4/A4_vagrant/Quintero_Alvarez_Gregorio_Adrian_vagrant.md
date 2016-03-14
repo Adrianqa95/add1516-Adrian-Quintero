@@ -207,7 +207,7 @@ Realizamos una comprobación para ver que el se ha añadido la nueva máquina.
 
 Cuando intentamos inicial la máquina al final nos muestra un mensaje de error que no nos permite iniciarla
 
-![Foto 30](./imagenes/30.PNG)
+![Foto 31](./imagenes/31.PNG)
 
 ![Foto 17](./imagenes/17.PNG)
 
