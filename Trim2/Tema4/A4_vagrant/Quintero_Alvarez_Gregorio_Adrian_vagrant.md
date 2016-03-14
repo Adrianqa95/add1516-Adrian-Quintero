@@ -182,7 +182,7 @@ Siguiendo el enlace anterior, creamos el usuario Vagrant, para poder acceder a l
 
 Aunque Vagrant no esta pensado para usar el usuario root, cambiaremos la password de root a vagrant.
 
-![Foto 25](./imagenes/25.PNG)
+![Foto 28](./imagenes/28.PNG)
 
 Concedemos permisos al usuario vagrant.
 
