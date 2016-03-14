@@ -143,7 +143,11 @@ Vagrantfile configurado con puppet:
 
 Fichero de configuración de puppet:
 
-![Foto 08](./imagenes/08.png)
+![Foto 19](./imagenes/19.png)
+
+Posteriormente veremos que el proceso de instalación estan los nuevos programas
+
+![Foto 18](./imagenes/18.png)
 
 
 * En el fichero `apache2.pp`, estarán las órdenes puppet para instalar y configurar 
