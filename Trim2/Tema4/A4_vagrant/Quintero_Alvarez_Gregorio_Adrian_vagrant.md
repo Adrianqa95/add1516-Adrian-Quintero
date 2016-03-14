@@ -172,6 +172,10 @@ Realizamos una comprobación para ver que el se ha añadido la nueva máquina.
 
 ![Foto 14](./imagenes/14.png)
 
+Cuando intentamos inicial la máquina al final nos muestra un mensaje de error que no nos permite iniciarla
+
+![Foto 17](./imagenes/17.PNG)
+
 #ANEXO
 
 ¿Dónde se guardan las imágenes base? ¿Las cajas de vagrant que nos vamos descargando?
