@@ -53,17 +53,17 @@ Podemos usar ssh para conectar con nuestra máquina virtual (`vagrant ssh`).
     
     ![Foto 20](./imagenes/20.png)
     
-    * `vagrant resume` : Volver a despertar la máquina.
+    `vagrant resume` : Volver a despertar la máquina.
     
     ![Foto 21](./imagenes/21.png)
     
-    * `vagrant halt`: Apagarla la máquina.
+    `vagrant halt`: Apagarla la máquina.
     
-    * `vagrant status`: Estado actual de la máquina.
+    `vagrant status`: Estado actual de la máquina.
     
     ![Foto 22](./imagenes/22.png)
     
-    * `vagrant destroy`: Para eliminar completamente la máquina.
+   `vagrant destroy`: Para eliminar completamente la máquina.
     
     ![Foto 23](./imagenes/23.png)
     
@@ -82,6 +82,8 @@ lo que hacemos es:
     vagrant up
     vagrant ssh
     ls /vagrant
+    
+![Foto 24](./imagenes/24.PNG)
 
 ##2.2 Redireccionamiento de los puertos
 
