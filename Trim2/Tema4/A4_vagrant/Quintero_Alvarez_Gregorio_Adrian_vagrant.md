@@ -49,7 +49,7 @@ Podemos usar ssh para conectar con nuestra máquina virtual (`vagrant ssh`).
 
  Otros comandos de Vagrant:
 
-    * `vagrant suspend`: Suspender la máquina.
+    `vagrant suspend`: Suspender la máquina.
     
     ![Foto 20](./imagenes/20.png)
     
@@ -80,7 +80,9 @@ Podemos usar ssh para conectar con nuestra máquina virtual (`vagrant ssh`).
 lo que hacemos es:
 
     vagrant up
+    
     vagrant ssh
+    
     ls /vagrant
     
 ![Foto 24](./imagenes/24.PNG)
