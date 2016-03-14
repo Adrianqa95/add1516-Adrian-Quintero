@@ -176,6 +176,18 @@ Si estamos pensando en crear nuestra propia caja, entonces podemos seguir las
 indicaciones del siguiente enlace:
 * [¿Cómo crear una Base Box en Vagrant a partir de una máquina virtual?](http://www.dbigcloud.com/virtualizacion/146-como-crear-un-vase-box-en-vagrant-a-partir-de-una-maquina-virtual.html)
 
+Siguiendo el enlace anterior, creamos el usuario Vagrant, para poder acceder a la máquina virtual por ssh.
+
+![Foto 27](./imagenes/27.PNG)
+
+Aunque Vagrant no esta pensado para usar el usuario root, cambiaremos la password de root a vagrant.
+
+![Foto 25](./imagenes/25.PNG)
+
+Concedemos permisos al usuario vagrant.
+
+![Foto 26](./imagenes/26.PNG)
+
 A partir de una máquina virtual VirtualBox (`openSuSe_add_vagrant`) vamos a crear la caja `package.box`.
 
 ![Foto 10](./imagenes/10.png)
