@@ -85,7 +85,7 @@ lo que hacemos es:
     
     ls /vagrant
     
-![Foto 24](./imagenes/24.PNG)
+![Foto 24](./imagenes/23.png)
 
 ##2.2 Redireccionamiento de los puertos
 
