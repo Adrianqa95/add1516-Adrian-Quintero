@@ -50,10 +50,23 @@ Podemos usar ssh para conectar con nuestra máquina virtual (`vagrant ssh`).
  Otros comandos de Vagrant:
 
     * `vagrant suspend`: Suspender la máquina.
+    
+    ![Foto 20](./imagenes/20.png)
+    
     * `vagrant resume` : Volver a despertar la máquina.
+    
+    ![Foto 21](./imagenes/21.png)
+    
     * `vagrant halt`: Apagarla la máquina.
+    
     * `vagrant status`: Estado actual de la máquina.
+    
+    ![Foto 22](./imagenes/22.png)
+    
     * `vagrant destroy`: Para eliminar completamente la máquina.
+    
+    ![Foto 23](./imagenes/23.png)
+    
 
 #2. Configuración
 
